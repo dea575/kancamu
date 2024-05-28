@@ -42,12 +42,12 @@
                     @guest
                         @if (Route::has('login'))
                             <a class="btn btn-secondary" href="{{ route('login') }}">
-                                <p class="verdana-semibold" style="font-size: 12px">Login</p>
+                                <p class="verdana-semibold" style="font-size: 12px">Masuk</p>
                             </a>
                         @endif
                         @if (Route::has('register'))
                             <a class="btn btn-secondary" href="{{ route('register') }}">
-                                <p class="verdana-semibold" style="font-size: 12px">Register</p>
+                                <p class="verdana-semibold" style="font-size: 12px">Daftar Akun</p>
                             </a>
                         @endif
                     @else
