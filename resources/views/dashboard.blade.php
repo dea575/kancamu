@@ -104,7 +104,7 @@
                                 hal-hal yang buat kamu menjadi sakit.</p>
                             <br>
                             <a href="{{ route('test.index') }}" class="btn"
-                                style="background-color: #68B1B7; width: 80px; border-radius: 13px;">Next</a>
+                                style="background-color: #68B1B7; width: 130px; border-radius: 13px;">Selanjutnya</a>
                         </div>
                     </div>
                     <div class="flex-fill text-end">
