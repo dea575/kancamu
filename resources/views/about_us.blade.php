@@ -56,10 +56,10 @@
                 <h4 class="verdana-semibold">Sejarah</h4>
             </div>
             <div class="col-9 mt-3 mb-3 text-center">
-                <p class="verdana-light" style="font-size: 13px; line-height: 2.6;">
+                <p class="verdana-light" style="font-size: 15px; line-height: 2.6;">
                     Biro Psikologi Kancamu didirikan pada 26 Juni 2022 oleh Kokoh D. Putera, M.Psi., Psikolog bersama
                     dengan dua rekannya yakni Ibnu Sutoko, M.Psi., Psikolog dan Eka Nur Maulida, M.Psi., Psikolog.
-                    Selama1 tahun berjalan, Kancamu sudah berkolaborasi dengan para praktisi psikologi
+                    Selama 1 tahun berjalan, Kancamu sudah berkolaborasi dengan para praktisi psikologi
                     maupun non psikologi, serta akademisi dari beberapa perguruan tinggi. Pada 25 Agustus 2023, Kancamu telah terdaftar
                     dalam Sistem Administrasi Badan Usaha dengan nama CV Potensi Sumber Daya Maju (PSDM) dan
                     disusul dengan terbitnya Nomor Induk Berusaha pada 5 September 2023. Langkah besar ini diambil
@@ -79,12 +79,12 @@
                         </div>
                     </div>
                     <div class="card-body verdana-light align-items-center d-flex justify-content-center">
-                        <div class="col-7 text-center" style="font-size: 14px; line-height: 1.8;">
+                        <div class="col-7 text-center" style="font-size: 15px; line-height: 1.8;">
                             <p>
                                 Menjadi salah satu institusi yang turut berkontribusi mewujudkan
                                 Indonesia Maju melalui upaya peningkatan kesejahteraan psikologis
                                 masyarakat, kualitas pendidikan, serta pengembangan organisasi dan
-                                sumberdaya manusia di Indonesia
+                                sumberdaya manusia di Indonesia.
                             </p>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <div class="card-body verdana-light align-items-center d-flex justify-content-center">
-                        <div class="w-75" style="font-size: 14px">
+                        <div class="w-75" style="font-size: 15px">
                             <ol>
                                 <li class="m-3">Mencetak kader-kader yang siap memperluas jangkauan promosi dan edukasi terkait kesehatan
                                     mental dan pendidikan berbasis psikologi perkembangan.</li>
@@ -163,7 +163,7 @@
                                                                 </div>
                                                                 <div class="col-7">
                                                                     <div class="mb-3">
-                                                                        <h4>Tentang Psikolog</h4>
+                                                                        <h4>Spesialisasi Kasus</h4>
                                                                         {!! $psychologist->description !!}
                                                                     </div>
                                                                     <div class="mb-3">

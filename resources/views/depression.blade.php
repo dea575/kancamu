@@ -53,7 +53,7 @@
             <div class="card shadow mt-5" style="border-radius: 20px; width: 70rem;">
                 <div class="card-body row justify-content-center">
                     <div class="col-8 mt-3 mb-3 text-center">
-                        <p class="verdana-light" style="font-size: 13px; line-height: 2.3;">
+                        <p class="verdana-light" style="font-size: 15px; line-height: 2.3;">
                             Depresi adalah gangguan mental yang memengaruhi perasaan, pemikiran, dan perilaku seseorang
                             dalam jangka waktu panjang. Gejalanya mencakup kesedihan yang berlebih, kehilangan minat
                             beraktivitas, perubahan berat badan, gangguan tidur, kelelahan, perasaan bersalah berlebihan,
@@ -77,15 +77,15 @@
                 <div class="card" style="background-color: #4E5170; position: relative;">
                     <div class="card verdana-light topcard" style="background-color: #68B1B7; width: 160px;">
                         <div class="card-body text-center text-white">
-                            Depresi Sedang
+                            Depresi Ringan
                         </div>
                     </div>
                     <div class="card-body row justify-content-center text-white">
                         <div class="col-9 text-center mb-4 " style="font-size: 9px">
                             <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
                                 Depresi ringan adalah tingkat keparahan depresi yang menunjukkan gejala yang meresahkan,
-                                tetapi tidak begitu parah sehingga tidak menghambat kemampuan seseorang untuk menjalani
-                                kehidupan sehari-hari secara signifikan.
+                                tetapi tidak begitu parah sehingga seseorang yang terkena depresi ringan tidak menghambat
+                                kemampuan seseorang untuk menjalani kehidupan sehari-hari secara signifikan, akan tetapi tidak bisa disepelekan
                             </p>
                         </div>
                     </div>
@@ -101,9 +101,9 @@
                     <div class="card-body row justify-content-center text-white">
                         <div class="col-9 text-center mb-4 " style="font-size: 9px">
                             <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
-                                Depresi ringan adalah tingkat keparahan depresi yang menunjukkan gejala yang meresahkan,
-                                tetapi tidak begitu parah sehingga tidak menghambat kemampuan seseorang untuk menjalani
-                                kehidupan sehari-hari secara signifikan.
+                            Depresi sedang adalah tingkat keparahan depresi yang lebih serius daripada depresi ringan,
+                            tetapi masih kurang parah dibandingkan dengan depresi berat. Pada tingkat ini, gejala depresi
+                            dapat lebih menghambat kemampuan seseorang untuk menjalani kehidupan sehari-hari.
                             </p>
                         </div>
                     </div>
@@ -113,15 +113,15 @@
                 <div class="card" style="background-color: #4E5170; position: relative;">
                     <div class="card verdana-light topcard" style="background-color: #68B1B7; width: 160px;">
                         <div class="card-body text-center text-white">
-                            Depresi Sedang
+                            Depresi Berat
                         </div>
                     </div>
                     <div class="card-body row justify-content-center text-white">
                         <div class="col-9 text-center mb-4 " style="font-size: 9px">
                             <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
-                                Depresi ringan adalah tingkat keparahan depresi yang menunjukkan gejala yang meresahkan,
-                                tetapi tidak begitu parah sehingga tidak menghambat kemampuan seseorang untuk menjalani
-                                kehidupan sehari-hari secara signifikan.
+                            Depresi berat adalah tingkat keparahan depresi yang paling parah dan dapat memberi dampak
+                            yang signifikan pada kehidupan i seseorang. Gejala depresi berat cenderung lebih intens dan
+                            lebih menghancurkan dibandingkan dengan tingkat keparahan depresi yang lebih rendah.
                             </p>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             <h5 class="verdana-semibold">Cara Penanganan Depresi Secara Mandiri</h5>
                         </div>
                         <div class="d-flex align-items-center justify-content-center mb-4">
-                            <div class="verdana-light mt-4 w-75 items-center" style="font-size: 13px">
+                            <div class="verdana-light mt-4 w-75 items-center" style="font-size: 15px">
                                 <ol>
                                     <li class="m-3">Pahami gejala depresi: Mengetahui gejala depresi dapat membantu untuk
                                         identifikasi masalah yang sedang dihadapi. </li>

@@ -114,11 +114,11 @@
                                                             </div>
                                                             <div class="form-group">
                                                                 <label for="str">STR</label>
-                                                                <input type="number" name="str" id="str" class="form-control @error('str') is-invalid @enderror" value="{{ old('str', $psychologist->str) }}">
+                                                                <input type="text" name="str" id="str" class="form-control @error('str') is-invalid @enderror" value="{{ old('str', $psychologist->str) }}">
                                                             </div>
                                                             <div class="form-group">
                                                                 <label for="sipp">SIPP</label>
-                                                                <input type="number" name="sipp" id="sipp" class="form-control @error('sipp') is-invalid @enderror" value="{{ old('sipp', $psychologist->sipp) }}">
+                                                                <input type="text" name="sipp" id="sipp" class="form-control @error('sipp') is-invalid @enderror" value="{{ old('sipp', $psychologist->sipp) }}">
                                                             </div>
                                                             <div class="form-group">
                                                                 <label for="description">Tentang Psikolog</label>
@@ -206,11 +206,11 @@
                     </div>
                     <div class="form-group">
                         <label for="str">STR</label>
-                        <input type="number" name="str" id="str" class="form-control @error('str') is-invalid @enderror" value="{{ old('str') }}" required>
+                        <input type="text" name="str" id="str" class="form-control @error('str') is-invalid @enderror" value="{{ old('str') }}">
                     </div>
                     <div class="form-group">
                         <label for="sipp">SIPP</label>
-                        <input type="number" name="sipp" id="sipp" class="form-control @error('sipp') is-invalid @enderror" value="{{ old('sipp') }}" required>
+                        <input type="text" name="sipp" id="sipp" class="form-control @error('sipp') is-invalid @enderror" value="{{ old('sipp') }}">
                     </div>
                     <div class="form-group">
                         <label for="description">Tentang Psikolog</label>

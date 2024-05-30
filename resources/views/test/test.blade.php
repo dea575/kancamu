@@ -26,7 +26,7 @@
     <!-- Depression -->
     <div class="row justify-content-center mt-4">
         <div class="col-5 mt-3 mb-3 text-center">
-            <p class="verdana-light" style="font-size: 13px; line-height: 2.6;">
+            <p class="verdana-light" style="font-size: 15px; line-height: 2.6;">
                 Bacalah masing-masing kalimat di bawah ini, pilihlah jawaban yang tepat yang sesuai dengan apa yang Anda
                 rasakan saat ini. Tidak ada jawaban benar atau salah. Kerjakan dengan cepat dan sesegera mungkin, dengan
                 memilih jawaban yang paling menggambarkan perasaan Anda saat ini.

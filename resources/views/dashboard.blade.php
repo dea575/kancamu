@@ -37,7 +37,7 @@
         <!-- Mood -->
         <div>
             <div class="text-center">
-                <h4 class="verdana-semibold">Bagaimana mood mu hari ini?</h4>
+                <h4 class="verdana-semibold">Apa Perasaan Yang Menggambarkan Mood Mu Hari Ini ?</h4>
             </div>
             <div class="d-flex justify-content-center gap-4 mt-5 mb-5 text-center">
                 <figure>
@@ -96,12 +96,13 @@
                     </div>
                     <div class="flex-fill col-7">
                         <div class="text-center mt-3 mb-3">
-                            <p class="verdana-light" style="font-size: 13px">Hai ! Bagaimana kabarmu hari ini ?</p>
+                            <p class="verdana-light" style="font-size: 15px">Hai ! Bagaimana kabarmu hari ini ?</p>
                             <br>
-                            <p class="verdana-light" style="font-size: 13px">Apapun perasaan yang kamu rasakan hari ini, aku
-                                berharap kamu tetap kuat ya, jangan pernah menyerah atas semua permasalahan yang kamu lalui.
-                                Sudah waktunya untuk menghargai dan mencintai diri sendiri, sudah waktunya menjauh dari
-                                hal-hal yang buat kamu menjadi sakit.</p>
+                            <p class="verdana-light" style="font-size: 15px">Apapun perasaan yang kamu rasakan hari ini, aku berharap kamu tetap kuat ya,
+                            jangan pernah menyerah atas semua permasalahan yang kamu lalui. Sudah waktunya untuk menghargai dan mencintai diri sendiri,
+                            Terkadang semua memang terasa tidak adil dan akhirnya merasa tertekan. Tapi tahukah kamu ? seseorang yang merasa tertekan
+                            cengerung mengalami depresi loh, terkadang seseorang yang mengalami depresi mengganggap sepele hal ini. Tetapi malah menjadi
+                            dampak buruk untuk kehidupanmu. Maka dari itu ikutilah tes ini untuk mengetahui apakah kamu mengalami depresi atau tidak</p>
                             <br>
                             <a href="{{ route('test.index') }}" class="btn"
                                 style="background-color: #68B1B7; width: 130px; border-radius: 13px;">Selanjutnya</a>
@@ -127,14 +128,14 @@
                             <h5 class="verdana-semibold">Tes Tingkat Depresi : Mari Mengenal Diri Sendiri</h5>
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
-                            <div class="verdana-light mt-4 w-75 items-center" style="font-size: 13px">
+                            <div class="verdana-light mt-4 w-75 items-center" style="font-size: 15px">
                                 <p>Baca petunjuk pengisiannya, yuk!</p>
                                 <ol>
-                                    <li>Gak ada jawaban yang benar atau salah ya. Isi dengan jujur sesuai apa yang kamu
+                                    <li>Tidak ada jawaban yang benar atau salah ya, Jawab sesuai apa yang kamu
                                         rasakan</li>
-                                    <li>Pelan-pelan aja tapi pasti, tes ini tidak ada batasan waktu</li>
+                                    <li>Tes ini tidak ada batasan waktu jadi tidak usah terburu-buru</li>
                                     <li>Cari tempat yang menurutmu nyaman saat menjawab tes ini</li>
-                                    <li>Hasil tes bisa langsung didapat setelah kamu mengisi semua pertanyaan dan submit
+                                    <li>Hasil tes bisa langsung didapat setelah mengirim semua jawaban
                                     </li>
                                 </ol>
                                 <p class="mt-4">Selamat mengisi teman-teman ^^</p>

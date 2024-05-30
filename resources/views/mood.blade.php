@@ -12,7 +12,7 @@
     <!-- Depression -->
     <div class="row justify-content-center mt-4">
         <div class="col-7 mt-3 mb-3 text-center">
-            <p class="verdana-light" style="font-size: 13px; line-height: 2.6;">
+            <p class="verdana-light" style="font-size: 15px; line-height: 2.6;">
                 Mood adalah istilah yang digunakan untuk mengekspresikan perasaan atau suasana hati seseorang pada waktu
                 tertentu. Mencakup perasaan yang melibatkan emosi, suasana, atau keadaan mental seseorang. Mood dapat
                 berkisar dari positif hingga negatif, dan dapat dipengaruhi oleh berbagai faktor seperti lingkungan,

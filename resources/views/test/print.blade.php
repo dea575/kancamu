@@ -21,14 +21,14 @@
     </style>
 </head>
 <body>
-    <img src="{{ public_path('asset/logo.png') }}" style="height: 55px;" alt="">
+    <img src="{{ public_path('asset/logo.png') }}" style="height: 50px;" alt="">
 
-    <div style="margin-top: 60px">
+    <div style="margin-top: 30px">
         <h4 style="font-weight: 0">Nama : {{ $test->User->name }}</h4>
         <h4 style="font-weight: 0">Jenis Kelamin : {{ $test->User->gender == 'male' ? 'Laki - Laki' : 'Perempuan' }}</h4>
         <h4 style="font-weight: 0">Email : {{ $test->User->email }}</h3>
     </div>
-    <div style="margin-top: 40px">
+    <div style="margin-top: 50px">
         <table style="width: 100%; font-size: 13px;">
             <thead>
                 <tr>
@@ -68,7 +68,7 @@
                 @endforeach
             </tbody>
         </table>
-        <div style="margin-top: 30px; text-align: center;">
+        <div style="margin-top: 200px; text-align: left;">
             <h3 >Hasil : {{ $test->score }}</h3>
             <h3 >{{ $test->Result->name }}</h3>
             <div>
