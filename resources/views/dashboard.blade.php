@@ -6,7 +6,6 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
         }
 
         .overflow {
@@ -21,6 +20,15 @@
         .img {
             max-height: 95px;
             margin: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .textover {
+                font-size: 14px;
+            }
+            .verdana-bold {
+                font-size: 16px;
+            }
         }
     </style>
 @endpush
@@ -37,51 +45,28 @@
         <!-- Mood -->
         <div>
             <div class="text-center">
-                <h4 class="verdana-semibold">Apa Perasaan Yang Menggambarkan Mood Mu Hari Ini ?</h4>
+                <h4 class="verdana-semibold">Bagaimana mood mu hari ini?</h4>
             </div>
-            <div class="d-flex justify-content-center gap-4 mt-5 mb-5 text-center">
-                <figure>
-                    <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
-                        <img src="{{ asset('asset/beranda/sedih.svg') }}" alt="" class="img-fluid rounded"
-                            style="width: 100px; height: 100px">
-                        <figcaption class="verdana-light mt-1">Sedih</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
-                        <img src="{{ asset('asset/beranda/terharu.svg') }}" alt="" class="img-fluid rounded"
-                            style="width: 100px; height: 100px">
-                        <figcaption class="verdana-light mt-1">Terharu</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
-                        <img src="{{ asset('asset/beranda/kecewa.svg') }}" alt="" class="img-fluid rounded"
-                            style="width: 100px; height: 100px">
-                        <figcaption class="verdana-light mt-1">Kecewa</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
-                        <img src="{{ asset('asset/beranda/marah.svg') }}" alt="" class="img-fluid rounded"
-                            style="width: 100px; height: 100px">
-                        <figcaption class="verdana-light mt-1">Marah</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
-                        <img src="{{ asset('asset/beranda/senang.svg') }}" alt="" class="img-fluid rounded"
-                            style="width: 100px; height: 100px">
-                        <figcaption class="verdana-light mt-1">Senang</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
-                        <img src="{{ asset('asset/beranda/biasa.svg') }}" alt="" class="img-fluid rounded"
-                            style="width: 100px; height: 100px">
-                        <figcaption class="verdana-light mt-1">Biasa Aja</figcaption>
-                    </a>
-                </figure>
+            <div class="row justify-content-center gap-4 mt-5 mb-5 text-center">
+                @php
+                    $moods = [
+                        ['name' => 'Sedih', 'img' => 'sedih.svg'],
+                        ['name' => 'Terharu', 'img' => 'terharu.svg'],
+                        ['name' => 'Kecewa', 'img' => 'kecewa.svg'],
+                        ['name' => 'Marah', 'img' => 'marah.svg'],
+                        ['name' => 'Senang', 'img' => 'senang.svg'],
+                        ['name' => 'Biasa Aja', 'img' => 'biasa.svg'],
+                    ];
+                @endphp
+                @foreach ($moods as $mood)
+                    <figure class="col-4 col-md-2">
+                        <a href="{{ route('mood.index') }}" class="text-black text-decoration-none">
+                            <img src="{{ asset('asset/beranda/' . $mood['img']) }}" alt="" class="img-fluid rounded"
+                                style="width: 100px; height: 100px">
+                            <figcaption class="verdana-light mt-1">{{ $mood['name'] }}</figcaption>
+                        </a>
+                    </figure>
+                @endforeach
             </div>
         </div>
         <!-- EndMood -->
@@ -89,24 +74,22 @@
         <!-- Depression -->
         <div class="card shadow mt-5">
             <div class="card-body">
-                <div class="d-flex">
+                <div class="d-flex flex-column flex-md-row">
                     <div class="flex-fill text-start">
                         <img src="{{ asset('asset/beranda/Anxiety-amico.png') }}" alt="" class="img-fluid"
                             style="width: 200px; height: 200px">
                     </div>
-                    <div class="flex-fill col-7">
-                        <div class="text-center mt-3 mb-3">
-                            <p class="verdana-light" style="font-size: 15px">Hai ! Bagaimana kabarmu hari ini ?</p>
-                            <br>
-                            <p class="verdana-light" style="font-size: 15px">Apapun perasaan yang kamu rasakan hari ini, aku berharap kamu tetap kuat ya,
+                    <div class="flex-fill col-12 col-md-7 text-center mt-3 mb-3">
+                        <p class="verdana-light" style="font-size: 15px">Hai ! Bagaimana kabarmu hari ini ?</p>
+                        <br>
+                        <p class="verdana-light" style="font-size: 15px">Apapun perasaan yang kamu rasakan hari ini, aku berharap kamu tetap kuat ya,
                             jangan pernah menyerah atas semua permasalahan yang kamu lalui. Sudah waktunya untuk menghargai dan mencintai diri sendiri,
                             Terkadang semua memang terasa tidak adil dan akhirnya merasa tertekan. Tapi tahukah kamu ? seseorang yang merasa tertekan
-                            cengerung mengalami depresi loh, terkadang seseorang yang mengalami depresi mengganggap sepele hal ini. Tetapi malah menjadi
-                            dampak buruk untuk kehidupanmu. Maka dari itu ikutilah tes ini untuk mengetahui apakah kamu mengalami depresi atau tidak</p>
-                            <br>
-                            <a href="{{ route('test.index') }}" class="btn"
-                                style="background-color: #68B1B7; width: 130px; border-radius: 13px;">Selanjutnya</a>
-                        </div>
+                            cenderung mengalami depresi loh, terkadang seseorang yang mengalami depresi menganggap sepele hal ini. Tetapi bisa menjadi
+                            dampak buruk bagi kehidupanmu. Maka dari itu ikutilah tes ini untuk mengetahui apakah kamu mengalami depresi atau tidak</p>
+                        <br>
+                        <a href="{{ route('test.index') }}" class="btn"
+                            style="background-color: #68B1B7; width: 130px; border-radius: 13px;">Selanjutnya</a>
                     </div>
                     <div class="flex-fill text-end">
                         <img src="{{ asset('asset/beranda/Anxiety-cuate.png') }}" alt="" class="img-fluid"
@@ -119,7 +102,7 @@
 
         <!-- Test -->
         <div class="row justify-content-center mt-4">
-            <div class="col-11">
+            <div class="col-12 col-md-11">
                 <div class="card shadow mt-4" style="background-color: #EBF2FA">
                     <div class="card-body">
                         <div class="text-center">
@@ -165,14 +148,14 @@
                             <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                                 <div class="row">
                                     @foreach ($datas as $article)
-                                        <div class="col-4">
+                                        <div class="col-12 col-md-4">
                                             <div class="card">
                                                 <div class="card-body verdana-light">
                                                     <h6 class="text-center mb-4 mt-3">{{ $article->title }}</h6>
                                                     <div class="text-center">
                                                         <img src="{{ $article->thumbnail }}" alt="..."
                                                             class="img-fluid rounded"
-                                                            style="height: 120px; width: 300px; object-fit: cover;">
+                                                            style="height: 120px; width: 100%; object-fit: cover;">
                                                     </div>
                                                     <div class="m-4" style="font-size: 9px">
                                                         <div class="overflow">
@@ -213,27 +196,20 @@
             <div class="text-center">
                 <h4 class="verdana-semibold">Partner Kami</h4>
             </div>
-            <div class="text-center">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/centrale.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/smp pgri pujon.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/mtsn kediri.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/arab.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/muhammadiyah boarding school.png') }}"
-                    alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/smp muhammadiyah malang.png') }}"
-                    alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/al-ishlah.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/al-munnawariyah.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/panti asuhan muhammadiyah.png') }}"
-                    alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/umm.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/arunika.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/aremania.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/reveals.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/restorasi.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/imm.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/cuan.png') }}" alt="">
-                <img class="img-fluid img" src="{{ asset('asset/logo partner/x.png') }}" alt="">
+            <div class="text-center row">
+                @php
+                    $partners = [
+                        'centrale.png', 'smp pgri pujon.png', 'mtsn kediri.png', 'arab.png',
+                        'muhammadiyah boarding school.png', 'smp muhammadiyah malang.png', 'al-ishlah.png',
+                        'al-munnawariyah.png', 'panti asuhan muhammadiyah.png', 'umm.png', 'arunika.png',
+                        'aremania.png', 'reveals.png', 'restorasi.png', 'imm.png', 'cuan.png', 'x.png'
+                    ];
+                @endphp
+                @foreach ($partners as $partner)
+                    <div class="col-4 col-md-2 mb-3">
+                        <img class="img-fluid img" src="{{ asset('asset/logo partner/' . $partner) }}" alt="">
+                    </div>
+                @endforeach
             </div>
         </div>
         <!-- EndPartner -->

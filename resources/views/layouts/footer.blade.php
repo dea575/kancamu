@@ -34,7 +34,7 @@
             <img src="{{ asset('asset/logo.png') }}" class="img-fluid" style="height: 49px;" alt="">
         </div>
         <div class="bottom-left">
-            <div class="col-6">
+            <div class="col-4">
                 <p style="font-size: 12px">Pemata Saxofone, Blok G9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65143</p>
                 <div class="d-flex gap-1 mt-3">
                     <a href="https://www.instagram.com/kancamu.co?igsh=MjNmYzh3ZjE3dXNr" target="__blank"><img src="{{ asset('asset/footer/instagram.png') }}" alt="" class="img-fluid" style="max-width: 16px; max-height: 16px;"></a>
@@ -56,13 +56,9 @@
         </div>
         <div class="bottom-right">
             <b style="font-size: 12px">Nilai Perusahaan</b>
-            <div style="font-size: 11px" class="col-8">
+            <div style="font-size: 11px" class="col-5">
                 <p>Kancamu diadopsi dari Bahasa Jawa yang berarti
-                    ‘temanmu’. Ini menunjukkan identitas kelahiran
-                    kami sekaligus wujud dedikasiuntuk berperan
-                    sebagai teman bagi klien-klien kami, dimana seorang
-                    teman akan mengajak menuju perubahan, mengingatkan demi kebaikan dan membantu ketika
-                    sedang dalam kesulitan. Hal ini selaras dengan nilai
+                    ‘temanmu’.Hal ini selaras dengan nilai
                     kami, yakni: ajak lebih sehat, cegah lebih tepat, tangani lebih tepat.</p>
             </div>
         </div>
