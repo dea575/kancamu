@@ -18,30 +18,54 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <style>
         ::placeholder {
-            /* Most modern browsers support this now. */
             color: rgb(255, 42, 0);
         }
 
         .form-control {
             background-color: #EEEEEE;
             padding: 14px;
-            font-size: 11px
+            font-size: 11px;
         }
 
         .col-form-label {
-            font-size: 13px
+            font-size: 13px;
         }
 
         .form-group {
             margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .form-control {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-control {
+                font-size: 16px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .col-md-4,
+            .col-md-6 {
+                padding: 0 1.5rem;
+            }
+
+            .verdana-light.mt-5 {
+                margin-top: 2rem;
+            }
         }
     </style>
 </head>
@@ -76,7 +100,7 @@
                     </div>
                     <div class="form-group">
                         <label for="name" class="col-form-label">{{ __('Nama Lengkap') }}</label>
-                        <input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Masukkan Nama Lengkap" required autocomplete="email" autofocus>
+                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Masukkan Nama Lengkap" required autocomplete="name">
                         @error('name')
                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                         @enderror
@@ -99,34 +123,31 @@
                         @enderror
                     </div>
                     <div class="row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-md-6">
                             <label for="birthdate" class="col-form-label">{{ __('Tanggal Lahir') }}</label>
-                            <input id="birthdate" type="date" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" value="{{ old('birthdate') }}" required autocomplete="email" autofocus>
-                            @error('name')
+                            <input id="birthdate" type="date" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" value="{{ old('birthdate') }}" required autocomplete="bdate">
+                            @error('birthdate')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                             @enderror
                         </div>
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-md-6">
                             <label for="whatsapp" class="col-form-label">{{ __('Nomor Whatsapp') }}</label>
-                            <input id="whatsapp" type="number" min="1" class="form-control @error('whatsapp') is-invalid @enderror" name="whatsapp" value="{{ old('whatsapp') }}" placeholder="081234567890" required autocomplete="email" autofocus>
-                            @error('name')
+                            <input id="whatsapp" type="tel" class="form-control @error('whatsapp') is-invalid @enderror" name="whatsapp" value="{{ old('whatsapp') }}" placeholder="081234567890" required autocomplete="tel">
+                            @error('whatsapp')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                             @enderror
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="password" class="col-form-label">{{ __('Password') }}</label>
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Masukkan Password" placeholder="Masukkan Password Ulang" required autocomplete="new-password">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Masukkan Password" required autocomplete="new-password">
                         @error('password')
                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                         @enderror
                     </div>
                     <div class="form-group">
                         <label for="password_confirmation" class="col-form-label">{{ __('Ulangi Password') }}</label>
-                        <input id="password_confirmation" type="password" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" placeholder="Masukkan Password" required autocomplete="new-password">
-                        @error('password_confirmation')
-                            <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                        @enderror
+                        <input id="password_confirmation" type="password" class="form-control" name="password_confirmation" placeholder="Ulangi Password" required autocomplete="new-password">
                     </div>
                     <div class="text-center mt-4">
                         <button type="submit" class="btn btn-info rounded-pill" style="width: 120px;">{{ __('Daftar') }}</button>

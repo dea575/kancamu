@@ -34,11 +34,34 @@
             top: -20px;
             align-self: center
         }
+
+        @media (max-width: 768px) {
+            .textleft,
+            .textright {
+                position: static;
+                transform: none;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .textright img {
+                height: auto;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .topcard {
+                position: static;
+                transform: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
     </style>
 @endpush
 @section('content')
     <div style="position: relative; text-align: center;">
-        <img src="{{ asset('asset/background-header.svg') }}" alt="" class="img-fluid w-100 h-100">
+        <img src="{{ asset('asset/background-header.svg') }}" alt="" class="img-fluid w-100">
         <div class="textleft">
             <h3 class="verdana-bold">Apa itu Depresi?</h3>
         </div>
@@ -47,20 +70,19 @@
         </div>
     </div>
     <div class="container mt-2">
-
         <!-- Depression -->
         <div class="row justify-content-center">
-            <div class="card shadow mt-5" style="border-radius: 20px; width: 70rem;">
+            <div class="card shadow mt-5" style="border-radius: 20px; width: 100%;">
                 <div class="card-body row justify-content-center">
-                    <div class="col-8 mt-3 mb-3 text-center">
+                    <div class="col-12 col-md-8 mt-3 mb-3 text-center">
                         <p class="verdana-light" style="font-size: 15px; line-height: 2.3;">
                             Depresi adalah gangguan mental yang memengaruhi perasaan, pemikiran, dan perilaku seseorang
                             dalam jangka waktu panjang. Gejalanya mencakup kesedihan yang berlebih, kehilangan minat
                             beraktivitas, perubahan berat badan, gangguan tidur, kelelahan, perasaan bersalah berlebihan,
-                            susah berkonsentrasi, dan memikirkan tentang kematian. Tingkatdepresi pada sesorang dapat
-                            disebabkan oleh berbagai faktor, seperti masalahkeluarga, masalah belajar dan masalah lingkungan
-                            sosial disekitar. Berawal daristress yang tidak diatasi, seseorang dapat mengalami depresi
-                            bahkan sampailevel depresi berat.
+                            susah berkonsentrasi, dan memikirkan tentang kematian. Tingkat depresi pada seseorang dapat
+                            disebabkan oleh berbagai faktor, seperti masalah keluarga, masalah belajar dan masalah lingkungan
+                            sosial di sekitar. Berawal dari stres yang tidak diatasi, seseorang dapat mengalami depresi
+                            bahkan sampai level depresi berat.
                         </p>
                     </div>
                 </div>
@@ -73,57 +95,51 @@
             <div class="text-center mt-5 mb-5">
                 <h4 class="verdana-semibold">Jenis Depresi</h4>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-4">
                 <div class="card" style="background-color: #4E5170; position: relative;">
-                    <div class="card verdana-light topcard" style="background-color: #68B1B7; width: 160px;">
+                    <div class="card verdana-light topcard" style="background-color: #68B1B7;">
                         <div class="card-body text-center text-white">
                             Depresi Ringan
                         </div>
                     </div>
-                    <div class="card-body row justify-content-center text-white">
-                        <div class="col-9 text-center mb-4 " style="font-size: 9px">
-                            <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
-                                Depresi ringan adalah tingkat keparahan depresi yang menunjukkan gejala yang meresahkan,
-                                tetapi tidak begitu parah sehingga seseorang yang terkena depresi ringan tidak menghambat
-                                kemampuan seseorang untuk menjalani kehidupan sehari-hari secara signifikan, akan tetapi tidak bisa disepelekan
-                            </p>
-                        </div>
+                    <div class="card-body text-center text-white">
+                        <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
+                            Depresi ringan adalah tingkat keparahan depresi yang menunjukkan gejala yang meresahkan,
+                            tetapi tidak begitu parah sehingga seseorang yang terkena depresi ringan tidak menghambat
+                            kemampuan seseorang untuk menjalani kehidupan sehari-hari secara signifikan, akan tetapi tidak bisa disepelekan
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-4">
                 <div class="card" style="background-color: #4E5170; position: relative;">
-                    <div class="card verdana-light topcard" style="background-color: #68B1B7; width: 160px;">
+                    <div class="card verdana-light topcard" style="background-color: #68B1B7;">
                         <div class="card-body text-center text-white">
                             Depresi Sedang
                         </div>
                     </div>
-                    <div class="card-body row justify-content-center text-white">
-                        <div class="col-9 text-center mb-4 " style="font-size: 9px">
-                            <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
+                    <div class="card-body text-center text-white">
+                        <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
                             Depresi sedang adalah tingkat keparahan depresi yang lebih serius daripada depresi ringan,
                             tetapi masih kurang parah dibandingkan dengan depresi berat. Pada tingkat ini, gejala depresi
                             dapat lebih menghambat kemampuan seseorang untuk menjalani kehidupan sehari-hari.
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-4">
                 <div class="card" style="background-color: #4E5170; position: relative;">
-                    <div class="card verdana-light topcard" style="background-color: #68B1B7; width: 160px;">
+                    <div class="card verdana-light topcard" style="background-color: #68B1B7;">
                         <div class="card-body text-center text-white">
                             Depresi Berat
                         </div>
                     </div>
-                    <div class="card-body row justify-content-center text-white">
-                        <div class="col-9 text-center mb-4 " style="font-size: 9px">
-                            <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
+                    <div class="card-body text-center text-white">
+                        <p class="verdana-light" style="font-size: 14px; line-height: 2.3;">
                             Depresi berat adalah tingkat keparahan depresi yang paling parah dan dapat memberi dampak
-                            yang signifikan pada kehidupan i seseorang. Gejala depresi berat cenderung lebih intens dan
+                            yang signifikan pada kehidupan seseorang. Gejala depresi berat cenderung lebih intens dan
                             lebih menghancurkan dibandingkan dengan tingkat keparahan depresi yang lebih rendah.
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -132,23 +148,23 @@
 
         <!-- Handling -->
         <div class="row justify-content-center mt-4">
-            <div class="col-11">
+            <div class="col-12 col-md-11">
                 <div class="card shadow mt-4">
                     <div class="card-body">
                         <div class="text-center mt-4">
                             <h5 class="verdana-semibold">Cara Penanganan Depresi Secara Mandiri</h5>
                         </div>
                         <div class="d-flex align-items-center justify-content-center mb-4">
-                            <div class="verdana-light mt-4 w-75 items-center" style="font-size: 15px">
+                            <div class="verdana-light mt-4 w-100 w-md-75 items-center" style="font-size: 15px">
                                 <ol>
                                     <li class="m-3">Pahami gejala depresi: Mengetahui gejala depresi dapat membantu untuk
                                         identifikasi masalah yang sedang dihadapi. </li>
                                     <li class="m-3">Berbicara dengan seseorang: Berbagi perasaan dan pengalaman dengan
-                                        teman, keluarga, atau orang yang percayai dapat memberikan dukungan emosional.
+                                        teman, keluarga, atau orang yang dipercayai dapat memberikan dukungan emosional.
                                         Jangan ragu untuk meminta bantuan.</li>
                                     <li class="m-3">Aktivitas fisik: Olahraga teratur dapat membantu meningkatkan suasana
                                         hati dan mengurangi tingkat stres. Pilihlah aktivitas fisik yang diminati..</li>
-                                    <li class="m-3">Polap makan sehat: Konsumsi makanan seimbang dan bergizi. Hindari
+                                    <li class="m-3">Pola makan sehat: Konsumsi makanan seimbang dan bergizi. Hindari
                                         mengandalkan makanan cepat saji atau terlalu banyak gula, karena ini dapat
                                         memengaruhi suasana hati.</li>
                                     <li class="m-3">Tidur yang cukup: Pastikan mendapatkan cukup tidur setiap malam. Pola
@@ -181,7 +197,6 @@
             <div class="text-center mb-5">
                 <h4 class="verdana-semibold">Artikel Mengenai Depresi</h4>
             </div>
-
             <div class="row">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -189,14 +204,14 @@
                             <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                                 <div class="row">
                                     @foreach ($datas as $article)
-                                        <div class="col-4">
+                                        <div class="col-12 col-md-4 mb-4">
                                             <div class="card">
                                                 <div class="card-body verdana-light">
                                                     <h6 class="text-center mb-4 mt-3">{{ $article->title }}</h6>
                                                     <div class="text-center">
                                                         <img src="{{ $article->thumbnail }}" alt="..."
                                                             class="img-fluid rounded"
-                                                            style="height: 120px; width: 300px; object-fit: cover;">
+                                                            style="height: 120px; width: 100%; object-fit: cover;">
                                                     </div>
                                                     <div class="m-4" style="font-size: 9px">
                                                         <div class="overflow">
@@ -231,6 +246,5 @@
             </div>
         </div>
         <!-- EndArticle -->
-
     </div>
 @endsection

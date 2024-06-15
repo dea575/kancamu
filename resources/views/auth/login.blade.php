@@ -18,22 +18,46 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <style>
         ::placeholder {
-            /* Most modern browsers support this now. */
             color: rgb(255, 42, 0);
         }
 
         .form-control {
             background-color: #EEEEEE;
             padding: 14px;
-            font-size: 11px
+            font-size: 11px;
+        }
+
+        @media (max-width: 768px) {
+            .form-control {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-control {
+                font-size: 16px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .col-md-4,
+            .col-md-6 {
+                padding: 0 1.5rem;
+            }
+
+            .verdana-light.mt-5 {
+                margin-top: 2rem;
+            }
         }
     </style>
 </head>

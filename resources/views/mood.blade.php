@@ -9,9 +9,9 @@
         </div>
     </div>
 
-    <!-- Depression -->
+    <!-- Description -->
     <div class="row justify-content-center mt-4">
-        <div class="col-7 mt-3 mb-3 text-center">
+        <div class="col-lg-7 col-md-8 col-sm-10 mt-3 mb-3 text-center">
             <p class="verdana-light" style="font-size: 15px; line-height: 2.6;">
                 Mood adalah istilah yang digunakan untuk mengekspresikan perasaan atau suasana hati seseorang pada waktu
                 tertentu. Mencakup perasaan yang melibatkan emosi, suasana, atau keadaan mental seseorang. Mood dapat
@@ -20,7 +20,7 @@
             </p>
         </div>
     </div>
-    <!-- EndDepression -->
+    <!-- End Description -->
 
     <div id="here"></div>
 
@@ -30,12 +30,12 @@
             <h4 class="verdana-semibold">Bagaimana mood mu hari ini?</h4>
         </div>
         <div class="row mt-5 justify-content-center align-items-center">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-8 col-sm-10">
                 <form action="{{ route('mood.store') }}" method="POST">
                     <div class="row text-center">
                         @csrf
-                        <div class="col-4">
-                            <button class="btn" name="mood" value="sad" onclick="this.form().submit">
+                        <div class="col-4 mb-3">
+                            <button class="btn" name="mood" value="sad" onclick="this.form().submit()">
                                 <figure>
                                     <img src="{{ asset('asset/beranda/sedih.svg') }}" alt=""
                                         class="img-fluid rounded {{ $mood == 'sad' ? 'mood' : '' }}"
@@ -44,8 +44,8 @@
                                 </figure>
                             </button>
                         </div>
-                        <div class="col-4">
-                            <button class="btn" name="mood" value="moved" onclick="this.form().submit">
+                        <div class="col-4 mb-3">
+                            <button class="btn" name="mood" value="moved" onclick="this.form().submit()">
                                 <figure>
                                     <img src="{{ asset('asset/beranda/terharu.svg') }}" alt=""
                                         class="img-fluid rounded {{ $mood == 'moved' ? 'mood' : '' }}"
@@ -54,8 +54,8 @@
                                 </figure>
                             </button>
                         </div>
-                        <div class="col-4">
-                            <button class="btn" name="mood" value="disappointed" onclick="this.form().submit">
+                        <div class="col-4 mb-3">
+                            <button class="btn" name="mood" value="disappointed" onclick="this.form().submit()">
                                 <figure>
                                     <img src="{{ asset('asset/beranda/kecewa.svg') }}" alt=""
                                         class="img-fluid rounded {{ $mood == 'disappointed' ? 'mood' : '' }}"
@@ -64,8 +64,8 @@
                                 </figure>
                             </button>
                         </div>
-                        <div class="col-4">
-                            <button class="btn" name="mood" value="angry" onclick="this.form().submit">
+                        <div class="col-4 mb-3">
+                            <button class="btn" name="mood" value="angry" onclick="this.form().submit()">
                                 <figure>
                                     <img src="{{ asset('asset/beranda/marah.svg') }}" alt=""
                                         class="img-fluid rounded {{ $mood == 'angry' ? 'mood' : '' }}"
@@ -74,8 +74,8 @@
                                 </figure>
                             </button>
                         </div>
-                        <div class="col-4">
-                            <button class="btn" name="mood" value="happy" onclick="this.form().submit">
+                        <div class="col-4 mb-3">
+                            <button class="btn" name="mood" value="happy" onclick="this.form().submit()">
                                 <figure>
                                     <img src="{{ asset('asset/beranda/senang.svg') }}" alt=""
                                         class="img-fluid rounded {{ $mood == 'happy' ? 'mood' : '' }}"
@@ -84,8 +84,8 @@
                                 </figure>
                             </button>
                         </div>
-                        <div class="col-4">
-                            <button class="btn" name="mood" value="normal" onclick="this.form().submit">
+                        <div class="col-4 mb-3">
+                            <button class="btn" name="mood" value="normal" onclick="this.form().submit()">
                                 <figure>
                                     <img src="{{ asset('asset/beranda/biasa.svg') }}" alt=""
                                         class="img-fluid rounded {{ $mood == 'normal' ? 'mood' : '' }}"
@@ -97,7 +97,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-8 col-sm-10 mt-4 mt-lg-0">
                 <div id='calendar'></div>
             </div>
         </div>
@@ -172,21 +172,20 @@
 
         /* Change text color of day headers in dayGridMonth view */
         .fc-daygrid-day {
-        color: green; /* Change this color to your desired text color */
-        text-decoration: none; /* Remove underline */
+            color: green; /* Change this color to your desired text color */
+            text-decoration: none; /* Remove underline */
         }
 
         /* Change the color of day numbers */
         .fc-daygrid-day-number {
-        color: black; /* Change this color to your desired text color */
-        text-decoration: none; /* Remove underline */
+            color: black; /* Change this color to your desired text color */
+            text-decoration: none; /* Remove underline */
         }
 
         /* Change the color of the month/year header */
         .fc-toolbar-title {
-        color: black; /* Change this color to your desired text color */
+            color: black; /* Change this color to your desired text color */
         }
-
     </style>
 @endpush
 
@@ -211,7 +210,6 @@
                         scrollTop: $('#here').offset().top
                     }, 100);
                 });
-
             });
 
             prevBtn.forEach(function(item, index) {
@@ -225,7 +223,7 @@
                     }, 100);
                 });
             });
-        })
+        });
 
         $(document).ready(function() {
             var calendarEl = document.getElementById('calendar');
@@ -242,7 +240,7 @@
             });
 
             calendar.render();
-        })
+        });
     </script>
 
     @if (Session::get('true'))

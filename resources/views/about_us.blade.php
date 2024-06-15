@@ -48,6 +48,22 @@
                 height: 250px;
             }
         }
+
+        @media (max-width: 576px) {
+            .textleft, .textright {
+                position: static;
+                transform: none;
+                text-align: center;
+                top: auto;
+                right: auto;
+                left: auto;
+            }
+
+            .textright img {
+                height: auto;
+                width: 100%;
+            }
+        }
     </style>
 @endpush
 
